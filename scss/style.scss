@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$body-font:'Open Sans', sans-serif;
+$prime-color: #53545e;
+$body-color:#fff;
+$text-color:#bfc0c3;
+$spec-color:#f1f1f1;
+$sup-color:#e1e1e1;
+
+
+@import "normalize";
+@import "layout";
+@import "elements";
+
+
+body{
+	background-color:  $spec-color;
+	font-family: $body-font;
+}
+
+h3 {	
+	font-weight: 700;
+	font-size: 18px;
+	color: $prime-color;
+	text-transform: uppercase;
+	@media screen and (min-width:800px){
+		font-size: 36px;
+	}
+}
+
+p{
+font-weight: 400;
+font-size: 13px;
+color: $text-color;
+@media screen and (min-width:800px){
+	font-size: 26px;
+}}
+
+/* Layout */
+.ba-container{
+	max-width: 1200px;
+}
+
+.ba-header{
+	background-color: $sup-color;
+	padding-top: 30px;
+	.ba-nav-col{
+		padding: 35px 30px;
+background-color: $prime-color;
+.ba-nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@media screen and (max-width:800px){
+		display: block;
+	}
+	
+	a{
+		display: inline-flex;
+		color: $body-color;
+		text-transform: uppercase;
+		img{
+			margin-right: 15px;
+			height: 39px;
+		}
+		.textcolor{
+			color: #a6a7b0;
+		}	
+		&:hover{
+			color:#a6a7b0;;
+			.textcolor{
+color: $body-color;
+			}
+		}
+	}
+	.ba-info{
+color: $spec-color;
+font-weight: 700;
+font-size: 12px;
+word-wrap: break-word;
+@media screen and (min-width:800px){
+	font-size: 24px;
+}
+	}
+}
+	}
+}
+
+.ba-cont-color{
+background-color: $body-color;
+}
+
+.ba-info-form{
+	padding: 30px;
+	&::after{
+		content: '';
+		display: block;
+		height: 2px;
+		background: #dedede;
+		max-width: 1160px;
+		margin: 30px auto 0;
+	}
+}
+
+.ba-info-column{
+	padding: 0 30px 30px;
+	&::after{
+		content: '';
+		display: block;
+		height: 2px;
+		background: #dedede;
+		max-width: 1160px;
+		margin: 30px auto 0;
+	}
+}
+
+.ba-photo-add{
+	padding: 0 30px 30px;
+	&::after{
+		content: '';
+		display: block;
+		height: 2px;
+		background: #dedede;
+		max-width: 1160px;
+		margin: 30px auto 0;
+	}
+	
+	.ba-add{
+		padding: 120px 120px;
+		text-align: center;
+		background-color: #dedede;
+		font-weight: 700;
+		font-size: 36px;
+		color: #b4b4b4;
+		text-transform: uppercase;
+		cursor: pointer;
+		&:hover{
+			color: $body-color;
+			background-color: #a6a7b0;
+		}
+		@media screen and (max-width:1024px){
+			font-size: 18px;
+			padding: 100px 60px;
+		}
+		@media screen and (max-width:800px){
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.ba-info-section__first{
+	padding: 0 30px 30px;
+	&::after{
+		content: '';
+		display: block;
+		height: 2px;
+		background: #dedede;
+		max-width: 1160px;
+		margin: 30px auto 0;
+	}
+}
+
+.ba-info-section__second{
+	padding: 0 30px 30px;
+}
+
+.ba-footer{
+	background-color: $sup-color;
+	padding-bottom: 30px;
+.ba-social-link{
+	color: $prime-color;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $spec-color;
+	padding: 20px 30px;
+	@media screen and (max-width:800px){
+		display: block;
+	}
+	a{
+		display: inline-block;
+		text-align: center;
+		font-size: 18px;
+		color: $prime-color;
+		background-color:  #e1e1e1;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		&:hover{
+			background-color: $text-color;
+		}
+		svg, img{
+			transform: translateY(25%);
+		}
+	}
+	a + a{
+		margin-left: 10px;
+	}
+}
+	.ba-footer-info{
+		background-color: $prime-color;
+		.ba-info-more{
+			padding: 30px;
+			p{
+				margin: 0;
+			}
+			.ba-col-link{
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				a{
+					margin-bottom: 10px;
+					font-weight: 400;
+					font-size: 18px;
+					color: $body-color;
+					@media screen and (max-width:800px){
+						font-size: 13px;
+					}
+					&:hover{
+						color: $text-color;
+					}
+					img{
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+		.ba-company-cprt{
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 30px;
+			a{
+				color: $body-color;
+				&:hover{
+					color: $text-color;
+				}
+			}
+		}
+	}
+}
